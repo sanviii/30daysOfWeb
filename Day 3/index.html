@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cards using JS</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: Copse;
+		}
+
+		body {
+			background-image: url(Files/bg.jpg);
+			background-size: cover;
+			width: 100%;
+			height: 100vh;
+			background-position-y: -140px;
+		}
+
+		div {
+			width: calc(100% - 40px);
+			height: calc(100vh - 14vh);
+			background-color: rgba(0,0,0,0.6);
+			padding: 7vh 20px;
+			display: grid;
+		}
+
+		section {
+			width: 250px;
+			height: 222px;
+			margin: 0 60px;
+			border-radius: 30px;
+			background-color: rgba(0,0,0,0.7);
+			backdrop-filter: blur(7px);
+			color: white;
+			font-size: 50px;
+			text-indent: 28px;
+			padding-top: 28px;
+		}
+
+		#body content {
+			width: 90%;
+			margin: auto;
+			height: 300px;
+			display: flex;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="body">
+		<content id="c1"></content>
+		<content id="c2"></content>
+	</div>
+	<script type="text/javascript">
+		let c1 = document.getElementById('c1');
+		let c2 = document.getElementById('c2');
+		for(let i = 0; i < 3; i++) {
+			let card = document.createElement("section");
+			let text = document.createTextNode("hi");
+			c1.appendChild(card);
+			card.appendChild(text);
+		}
+		for(let i = 0; i < 3; i++) {
+			let card = document.createElement("section");
+			let text = document.createTextNode("hi");
+			c2.appendChild(card);
+			card.appendChild(text);
+		}
+	</script>
+</body>
+</html>
