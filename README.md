@@ -4,4 +4,5 @@ Will be adding codes written in HTML, CSS, JS, PowerShell and Design files on th
 ## Status: 
 Day 1: Adding basic HTML with Dark Mode.<br>
 Day 2: Adding Figma design file and HTML code.<br>
-Day 3: Adding Figma design file and HTML code.
+Day 3: Adding Figma design file and HTML code.<br>
+Day 4: Adding Figma design files.
